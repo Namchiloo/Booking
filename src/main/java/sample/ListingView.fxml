@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateListingRequest">
+   <center>
+      <FlowPane hgap="30.0" prefHeight="674.0" prefWidth="600.0" styleClass="root" stylesheets="@background.css" vgap="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@logo_small.png" />
+               </image>
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+            </ImageView>
+            <VBox prefHeight="550.0" prefWidth="551.0">
+               <children>
+                  <Label fx:id="listingTitle" alignment="CENTER" prefHeight="40.0" prefWidth="551.0" text="Country House" textFill="#5c6e9c">
+                     <font>
+                        <Font name="Avenir Book" size="21.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <HBox prefHeight="30.0" prefWidth="277.0">
+                     <children>
+                        <Label fx:id="address" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="22.0" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="338.0" style="-fx-border-color: #c8d0e6;" text="Address goes here" textFill="#1961ce" wrapText="true">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="country" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="22.0" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="236.0" style="-fx-border-color: #c8d0e6;" text="Country goes here" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="170.0" prefWidth="551.0">
+                     <children>
+                        <ImageView fx:id="imageURL" fitHeight="170.0" fitWidth="300.0" layoutX="162.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@slika2.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <HBox prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" graphicTextGap="48.0" prefHeight="26.0" prefWidth="50.0" text="Type:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="type" contentDisplay="RIGHT" graphicTextGap="48.0" prefHeight="26.0" prefWidth="144.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" prefHeight="26.0" prefWidth="60.0" text="Rooms:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="noOfRooms" contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="50.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="45.0" text="Beds:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="noOfBeds" contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="220.0" layoutY="10.0" prefHeight="26.0" prefWidth="50.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="26.0" prefWidth="44.0" text="Area:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="area" layoutX="400.0" layoutY="10.0" prefHeight="26.0" prefWidth="50.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" prefHeight="26.0" prefWidth="33.0" text="m2">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="93.0" style="-fx-border-color: c8d0e6;" text="Pets allowed:" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="75.0" style="-fx-border-color: c8d0e6;" text="WiFi:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="73.0" layoutY="10.0" prefHeight="60.0" prefWidth="70.0" style="-fx-border-color: c8d0e6;" text="TV:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="135.0" layoutY="10.0" prefHeight="60.0" prefWidth="70.0" style="-fx-border-color: c8d0e6;" text="AC:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="198.0" layoutY="10.0" prefHeight="60.0" prefWidth="85.0" style="-fx-border-color: c8d0e6;" text="Kitchen:" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="85.0" style="-fx-border-color: c8d0e6;" text="Balcony:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="85.0" style="-fx-border-color: c8d0e6;" text="Garden:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="90.0" style="-fx-border-color: c8d0e6;" text="Smoking allowed:" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="85.0" style="-fx-border-color: c8d0e6;" text="Parking:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="551.0">
+                     <children>
+                        <CheckBox fx:id="petsAllowed" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="wiFi" mnemonicParsing="false" prefHeight="32.0" prefWidth="75.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="tv" mnemonicParsing="false" prefHeight="32.0" prefWidth="70.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="ac" mnemonicParsing="false" prefHeight="32.0" prefWidth="70.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="kitchen" mnemonicParsing="false" prefHeight="32.0" prefWidth="85.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="balcony" mnemonicParsing="false" prefHeight="32.0" prefWidth="85.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="garden" mnemonicParsing="false" prefHeight="32.0" prefWidth="85.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="smokingAllowed" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox fx:id="parking" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="85.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="23.0" />
+                           </padding>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" prefHeight="26.0" prefWidth="119.0" text="Price per night:  $">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pricePerNight" contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="65.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="124.0" text="Free cancelation:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                        </Label>
+                        <CheckBox fx:id="freeCancellation" mnemonicParsing="false" prefHeight="18.0" prefWidth="33.0">
+                           <HBox.margin>
+                              <Insets right="35.0" top="4.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="59.0" text="Rating:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="129.0" layoutY="10.0" prefHeight="26.0" prefWidth="45.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" prefHeight="26.0" prefWidth="230.0" text="Discount for returning customers:">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="discountForReturningCustomers" contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="35.0" text="XXX" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" graphicTextGap="67.5" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="18.0" text="\%">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="72.0" prefWidth="551.0">
+                     <children>
+                        <Label fx:id="detailedDescription" alignment="TOP_LEFT" prefHeight="72.0" prefWidth="551.0" text="Description goes here" textFill="#1961ce">
+                           <font>
+                              <Font name="Avenir Next Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="errorMessage" prefHeight="17.0" prefWidth="532.0" textFill="RED" />
+                  <Button id="glass-grey" fx:id="submitButton" mnemonicParsing="false" onAction="#OpenBookScene" prefHeight="28.0" prefWidth="290.0" stylesheets="@button.css" text="Book">
+                     <font>
+                        <Font name="Avenir Next Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="130.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="25.0" top="15.0" />
+         </padding>
+      </FlowPane>
+   </center>
+</BorderPane>

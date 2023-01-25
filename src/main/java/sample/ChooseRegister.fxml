@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="425.0" style="-fx-border-color: #5c6e9c; -fx-border-radius: 15; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChooseRegister">
+    <children>
+        <Label layoutX="157.0" layoutY="21.0" prefHeight="27.0" prefWidth="111.0" text="Register as:" textFill="#0b3155">
+            <font>
+                <Font name="Avenir Next Bold" size="18.0" />
+            </font></Label>
+        <MenuButton id="grey" layoutX="146.0" layoutY="54.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="133.0" stylesheets="@button.css" text="Select">
+            <items>
+                <MenuItem fx:id="Landlord" mnemonicParsing="false" onAction="#LandlordMenuItemSelected" text="Landlord" />
+                <MenuItem fx:id="User" mnemonicParsing="false" onAction="#UserMenuItemSelected" text="User" />
+            </items>
+            <font>
+                <Font name="Avenir Next Bold" size="13.0" />
+            </font>
+        </MenuButton>
+        <Button id="glass-grey" layoutX="168.0" layoutY="151.0" mnemonicParsing="false" onAction="#NextButtonPressed" prefHeight="25.0" prefWidth="90.0" stylesheets="@button.css" text="Next">
+            <font>
+                <Font name="Avenir Next Bold" size="13.0" />
+            </font></Button>
+      <Label fx:id="InfoLabel" layoutX="22.0" layoutY="112.0" prefHeight="27.0" prefWidth="381.0" textFill="#0b3155">
+         <font>
+            <Font name="Avenir Next Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

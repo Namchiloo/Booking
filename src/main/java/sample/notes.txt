@@ -1,0 +1,2 @@
+tip korisnika u bazi: 1->admin 2->landlord 3->user
+tip smjestaja u bazi: 1->house 2->Villa 3->Apartment 4->Room 5->Cottage
